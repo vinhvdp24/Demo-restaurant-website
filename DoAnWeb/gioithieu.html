@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Restaurant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jaro:wght@400&family=Alumni+Sans:wght@900&family=Kanit:wght@900&display=swap">
+    <link rel="stylesheet" href="css/gioithieu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+<header class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="https://i.postimg.cc/9QK2QpC6/logo.png" alt="Restaurant Logo" class="logo-img">
+        </a>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="store.html">STORE</a></li>
+            </ul>
+            <div class="cart">
+                <a href="cart.html">🛒 CART: <span id="cart-count" style="color: yellow">0</span></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        <!-- Main Menu -->
+         <div class="menu-wrapper">
+                    <nav class="menu">
+                            <ul>
+                                
+                                <li>
+                                    <a href="burger.html">
+                                        <img src="https://i.postimg.cc/QtnCppbr/Burger.jpg" alt="Burger Menu" class="menu-img">
+                                        <div>Burger</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="combo.html">
+                                        <img src="https://i.postimg.cc/PJpxKP3v/Combo.jpg" alt="Combo" class="menu-img">
+                                        <div>Combo</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chicken.html">
+                                        <img src="https://i.postimg.cc/906fkCK8/Chicken.jpg" alt="Chicken" class="menu-img">
+                                        <div>Chicken</div>
+                                    </a>
+                                </li>
+                               <li>
+                                    <a href="rice.html">
+                                        <img src="https://i.postimg.cc/mZJhkykY/Rice.png" alt="Rice" class="menu-img">
+                                        <div>Rice</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sideitems.html">
+                                        <img src="https://i.postimg.cc/3xHRCrgW/SideItem.png" alt="Side Items" class="menu-img">
+                                        <div>Side Items</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="drink.html">
+                                        <img src="https://i.postimg.cc/DwdzCVg6/Drink.jpg" alt="Drink" class="menu-img">
+                                        <div>Drink</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="labthuchanh.html">
+                                        <img src="https://i.postimg.cc/QMfd3pvW/labthuchanh.png" alt="LabThucHanh" class="menu-img">
+                                        <div>PracticeLab</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+         </div>
+
+<div class="contact-container">
+    <h1 class="contact-header">Giới Thiệu</h1>
+    <div class="underline" style="background-color: red;"></div>
+
+    <!-- Thông tin nhà hàng (trên) -->
+    <div class="contact-info" style="margin-bottom: 2rem;">
+        <h2>Về Burger Royal</h2>
+        <p><strong>Sứ mệnh:</strong> Mang đến những chiếc burger chất lượng, nóng hổi, phục vụ nhanh chóng cho mọi thực khách yêu thích ẩm thực nhanh.</p>
+        <p><strong>Đặc trưng:</strong> Burger nướng than thơm lừng, khoai tây chiên giòn tan, nước sốt độc quyền và combo tiết kiệm mỗi ngày.</p>
+    </div>
+
+
+    <div class="form-container">
+        <h2>Fastfood – Nhanh nhưng Chất</h2>
+        <p>Chúng tôi hiểu rằng cuộc sống bận rộn khiến bạn cần những bữa ăn nhanh chóng nhưng vẫn đầy đủ dinh dưỡng và hương vị. Tại Burger Royal, bạn không chỉ tìm thấy burger ngon, mà còn cảm nhận được sự sang trọng trong từng miếng ăn.</p>
+        <p>Đến và trải nghiệm không gian hiện đại, dịch vụ chuyên nghiệp, và menu đa dạng từ burger truyền thống đến gà rán, salad, nước ngọt các loại.</p>
+        <p><strong>Khẩu hiệu:</strong> "Burger Royal – Vị ngon xứng tầm hoàng gia"</p>
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="js/cart.js"></script>
+    <script src="js/contact.js"></script>
+
+
+    <footer class="footer">
+            <div class="footer-left">
+                <div class="row">
+                    <div><strong>Họ tên:</strong> Nguyễn Văn A</div>
+                    <div><strong>MSSV:</strong> 123456789</div>
+                </div>
+                <div class="row">
+                    <div><strong>Lớp:</strong> DHCNTT17A</div>
+                    <div><strong>Nhóm/Ca học:</strong> Nhóm 5 / Ca 2</div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="gioithieu.html">
+                    <button class="footer-button">Giới thiệu</button>
+                </a>
+                <a href="lienhe.html">
+                    <button class="footer-button">Liên hệ</button>
+                </a>
+                
+            </div>
+    </footer>
+
+</body>
+</html>
+
+
+

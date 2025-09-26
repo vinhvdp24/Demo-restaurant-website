@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+        <style>
+            .horizontal-menu {
+                list-style: none;
+                display: flex;
+                padding: 0;
+            }
+
+            .horizontal-menu li {
+                background-color:  aqua  ;
+                padding: 10px 20px;
+                
+            }
+
+            .horizontal-menu li a {
+                text-decoration: none;
+                color: blue;
+
+            }
+
+            .horizontal-menu li:hover {
+                background-color: yellow;
+                border-radius: 5px;
+            }
+            .horizontal-menu li:hover a {
+                color:white;
+                font-weight: bold;
+            }
+
+
+            .vertical-menu{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+
+
+            }
+            .vertical-menu li{
+                margin: 0;
+                padding: 10px;
+                background-color:#3498db;
+                border-bottom: 1px solid white;
+                transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+            }
+
+
+            .vertical-menu li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .vertical-menu li:hover{
+                filter: brightness(130%);
+                font-style: italic;
+            }
+
+
+        </style>
+</head>
+    <ul class ="horizontal-menu">
+        <li> <a href="#">Trang chu</a></li>
+        <li> <a href="#">Gioi thieu</a></li>
+        <li><a href="#">San pham</a></li>
+        <li><a href="#">Dich vu</a></li>
+        <li><a href="#">Lien he</a></li>
+    </ul>
+
+    <ul class ="vertical-menu">
+        <li> <a href="#">Trang chu</a></li>
+        <li> <a href="#">Gioi thieu</a></li>
+        <li><a href="#">San pham</a></li>
+        <li><a href="#">Dich vu</a></li>
+        <li><a href="#">Lien he</a></li>
+    </ul>
+
+
+</body>
+</html>

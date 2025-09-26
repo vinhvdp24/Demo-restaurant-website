@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu - Burger Restaurant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jaro:wght@400&family=Alumni+Sans:wght@900&family=Kanit:wght@900&display=swap">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+<header class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="https://i.postimg.cc/9QK2QpC6/logo.png" alt="Restaurant Logo" class="logo-img">
+        </a>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="store.html">STORE</a></li>
+            </ul>
+            <div class="cart">
+                <a href="cart.html">🛒 CART: <span id="cart-count" style="color: yellow">0</span></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        <!-- Main Menu -->
+       <div class="menu-wrapper">
+                    <nav class="menu">
+                            <ul>
+                                
+                                <li>
+                                    <a href="burger.html">
+                                        <img src="https://i.postimg.cc/QtnCppbr/Burger.jpg" alt="Burger Menu" class="menu-img">
+                                        <div>Burger</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="combo.html">
+                                        <img src="https://i.postimg.cc/PJpxKP3v/Combo.jpg" alt="Combo" class="menu-img">
+                                        <div>Combo</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chicken.html">
+                                        <img src="https://i.postimg.cc/906fkCK8/Chicken.jpg" alt="Chicken" class="menu-img">
+                                        <div>Chicken</div>
+                                    </a>
+                                </li>
+                               <li>
+                                    <a href="rice.html">
+                                        <img src="https://i.postimg.cc/mZJhkykY/Rice.png" alt="Rice" class="menu-img">
+                                        <div>Rice</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sideitems.html">
+                                        <img src="https://i.postimg.cc/3xHRCrgW/SideItem.png" alt="Side Items" class="menu-img">
+                                        <div>Side Items</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="drink.html">
+                                        <img src="https://i.postimg.cc/DwdzCVg6/Drink.jpg" alt="Drink" class="menu-img">
+                                        <div>Drink</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="labthuchanh.html">
+                                        <img src="https://i.postimg.cc/QMfd3pvW/labthuchanh.png" alt="LabThucHanh" class="menu-img">
+                                        <div>PracticeLab</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+         </div>
+        <!-- Products Section -->
+        <section class="products">
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/T14dDfT2/Picsart-25-05-14-03-32-33-896.jpg" alt="Fries S">
+                    <h3>French Fries S</h3>
+                    <p>Khoai tây chiên cỡ nhỏ</p>
+                    <span class="price">VND190000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/5NXNMYmX/Picsart-25-05-14-03-35-56-177.jpg" alt="Fries M">
+                    <h3>French Fries M</h3>
+                    <p>Khoai tây chiên cỡ vừa</p>
+                    <span class="price">VN29,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/rF7yyVhQ/Picsart-25-05-14-03-37-02-313.jpg" alt="Fries L">
+                    <h3>French Fries L</h3>
+                    <p>Khoai tây chiên cỡ lớn</p>
+                    <span class="price">VND39,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/x8Cj8cDF/retouch-1747167796938.webp" alt="Cheese Ring">
+                    <h3>Cheese Ring</h3>
+                    <p>Vòng phô mai </p>
+                    <span class="price">VND39,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/8CS1Wygv/retouch-1747167847124.webp" alt="Cheesy Fries">
+                    <h3>Cheesy Fries</h3>
+                    <p>Khoai tây chiên sốt phô mai </p>
+                    <span class="price">VN,35000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/HxWdvVxs/retouch-1747167877331.webp" alt="Cheesy Fries Bacon">
+                    <h3>Cheesy Fries Bacon</h3>
+                    <p>Khoai tây chiên sốt phô mai thịt xông khói </p>
+                    <span class="price">VND55,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/x1YfNx2z/retouch-1747168132805.webp" alt="CS 2">
+                    <h3>Cheese Stick 2PCS </h3>
+                    <p>2 miếng phô mai que  </p>
+                    <span class="price">VND22,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/Nj4g66sP/viber-image-2022-08-30-15-03-07-911.jpg" alt="CS 8">
+                    <h3>Cheese Stick 8PCS </h3>
+                    <p>8 miếng phô mai que </p>
+                    <span class="price">VND80,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/wBj9013x/retouch-1747168083149.webp" alt="FS 4">
+                    <h3>Fish Stick 4PCS </h3>
+                    <p>4 miếng cá cuộn rong biển </p>
+                    <span class="price">VND49,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/pT9RM3Dg/retouch-1747168056174.webp" alt="FS 8">
+                    <h3>Fish Stick 8PCS </h3>
+                    <p>8 miếng cá cuộn rong biển </p>
+                    <span class="price">VND69,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/brkPsbVg/retouch-1747168019670.webp" alt="CR 3">
+                    <h3>Chicken Roll 3PCS </h3>
+                    <p>3 miếng gà cuộn rong biển </p>
+                    <span class="price">VND39,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/nVDpRbVm/retouch-1747167974506.webp" alt="CR 4">
+                    <h3>Chicken Roll 4PCS  </h3>
+                    <p>4 miếng gà cuộn rong biển </p>
+                    <span class="price">VND49,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/gkydpVZk/retouch-1747167935697.webp" alt="CR 6">
+                    <h3>Chicken Roll 6PCS </h3>
+                    <p>6 miếng gà cuộn rong biển </p>
+                    <span class="price">VND69,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+    
+            </div>
+        </section>
+    </div>
+    <script src="js/cart.js"></script>
+     <div class="footer">
+        <div class="footer-left">
+            <div class="row">
+                <div><strong>Họ tên:</strong> Nguyễn Văn A</div>
+                <div><strong>MSSV:</strong> 123456789</div>
+            </div>
+            <div class="row">
+                <div><strong>Lớp:</strong> DHCNTT17A</div>
+                <div><strong>Nhóm/Ca học:</strong> Nhóm 5 / Ca 2</div>
+            </div>
+        </div>
+        <div class="footer-right">
+                <a href="gioithieu.html">
+                    <button class="footer-button">Giới thiệu</button>
+                </a>
+                <a href="lienhe.html">
+                    <button class="footer-button">Liên hệ</button>
+                </a>
+            
+        </div>
+    </div>
+</body>
+</html>

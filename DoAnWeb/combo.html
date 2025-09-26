@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu - Burger Restaurant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jaro:wght@400&family=Alumni+Sans:wght@900&family=Kanit:wght@900&display=swap">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+<header class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="https://i.postimg.cc/9QK2QpC6/logo.png" alt="Restaurant Logo" class="logo-img">
+        </a>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="store.html">STORE</a></li>
+            </ul>
+            <div class="cart">
+                <a href="cart.html">🛒 CART: <span id="cart-count" style="color: yellow">0</span></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        <!-- Main Menu -->
+        <div class="menu-wrapper">
+                    <nav class="menu">
+                            <ul>
+                                
+                                <li>
+                                    <a href="burger.html">
+                                        <img src="https://i.postimg.cc/QtnCppbr/Burger.jpg" alt="Burger Menu" class="menu-img">
+                                        <div>Burger</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="combo.html">
+                                        <img src="https://i.postimg.cc/PJpxKP3v/Combo.jpg" alt="Combo" class="menu-img">
+                                        <div>Combo</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chicken.html">
+                                        <img src="https://i.postimg.cc/906fkCK8/Chicken.jpg" alt="Chicken" class="menu-img">
+                                        <div>Chicken</div>
+                                    </a>
+                                </li>
+                               <li>
+                                    <a href="rice.html">
+                                        <img src="https://i.postimg.cc/mZJhkykY/Rice.png" alt="Rice" class="menu-img">
+                                        <div>Rice</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sideitems.html">
+                                        <img src="https://i.postimg.cc/3xHRCrgW/SideItem.png" alt="Side Items" class="menu-img">
+                                        <div>Side Items</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="drink.html">
+                                        <img src="https://i.postimg.cc/DwdzCVg6/Drink.jpg" alt="Drink" class="menu-img">
+                                        <div>Drink</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="labthuchanh.html">
+                                        <img src="https://i.postimg.cc/QMfd3pvW/labthuchanh.png" alt="LabThucHanh" class="menu-img">
+                                        <div>PracticeLab</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+         </div>
+
+        <!-- Products Section -->
+        <section class="products">
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/ZnyPGY7X/Picsart-25-05-17-00-44-48-498.jpg" alt="Cheese Burger Combo">
+                    <h3>COMBO CHEESE BURGER </h3>
+                    <p>Burger Bò Nướng Phô Mai + khoai tây chiên vừa + 1 thức uống</p>
+                    <span class="price">VND69,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/3ryP8gPQ/Picsart-25-05-17-00-53-56-761.jpg" alt=" Combo BBQ CNC Cheese Burger">
+                    <h3>COMBO BBQ CHICKEN CRISP CHEESE BURGER</h3>
+                    <p>Burger gà giòn phô mai sốt BBQ + khoai tây chiên vừa + 1 thức uống</p>
+                    <span class="price">VND69,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/dtrpdJsW/Picsart-25-05-17-00-54-38-247.jpg" alt="Combo Fish Burger">
+                    <h3>COMBO FISH BURGER</h3>
+                    <p>Burger Cá + khoai tây chiên vừa + 1 thức uống</p>
+                    <span class="price">VND69,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/NjtVkZLQ/Picsart-25-05-17-00-56-05-741.jpg" alt="Combo Grilled Onion Burger">
+                    <h3>COMBO GRILLED ONION BURGER</h3>
+                    <p>Burger Bò Nướng Hành Chiên + khoai tây chiên vừa + 1 thức uống</p>
+                    <span class="price">VND79,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/mrDmd44W/Picsart-25-05-17-00-56-40-888.jpg" alt="Cheese Ring Beef Burger Combo">
+                    <h3>COMBO CHEESE RING BEEF BURGER</h3>
+                    <p>Burger bò phô mai vòng + khoai tây chiên vừa + 1 thức uống</p>
+                    <span class="price">VND79,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/50QnVmjP/Picsart-25-05-17-00-55-22-858.jpg" alt="Traditonal Beef Burger Combo">
+                    <h3>COMBO TRADITIONAL BEEF BURGER </h3>
+                    <p>Burger bò nướng thuyền thống + khoai tây chiên vừa + 1 thức uống </p>
+                    <span class="price">VND79,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                 <div class="product-item">
+                    <img src="https://i.postimg.cc/QCLSxWTj/Picsart-25-05-17-00-46-15-364.jpg" alt="Combo Single BBQ Bacon Cheese Burger">
+                    <h3>COMBO SINGLE BBQ BACON CHEESE BURGER</h3>
+                    <p>Burger bò phô mai thịt xông khói + khoai tây chiên vừa + 1 thức uống</p>
+                    <span class="price">VND89,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/02wZ3nhr/storage-emulated-0-Pictures-Picsart-Picsart-25-05-17-00-57-13-365.jpg" alt="Combo Extreme Chese Burger JR">
+                    <h3>COMBO EXTREME CHEESE BURGER </h3>
+                    <p>Burger bò sốt phô mai + khoai tây chiên vừa + 1 thức uống</p>
+                    <span class="price">VND89,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/kXsNLHfJ/Picsart-25-05-17-00-47-59-120.jpg" alt="COMBO COUPLE 1">
+                    <h3>COMBO COUPLE 1</h3>
+                    <p>Burger bò phô mai + Burger bò nướng truyền thống+ khoai tây tây chiên sốt phô mai + 2 thức uống</p>
+                    <span class="price">VND139,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/Cx6Gxf39/Picsart-25-05-17-00-49-45-323.jpg" alt="COMBO COUPLE 2">
+                    <h3>COMBO COUPLE 2</h3>
+                    <p>Burger bò phô mai thịt xông khói + Burger bò nướng truyền thống+ khoai tây chiên vừa + 2 mix wing + 2 thức uống</p>
+                    <span class="price">VND179,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.postimg.cc/Px1YyVCk/Picsart-25-05-17-00-53-14-286.jpg" alt="COMBO FAMILY">
+                    <h3>COMBO FAMILY</h3>
+                    <p>Burger bò phô mai + Burger bò nướng truyền thống+ Burger bò sốt phô mai + khoai tây chiên lớn + 4 mix wing + 2 phô mai que + 3 thức uống</p>
+                    <span class="price">VND179,000</span>
+                    <button class="add-to-cart">🛒</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/cart.js"></script>
+    <div class="footer">
+        <div class="footer-left">
+            <div class="row">
+                <div><strong>Họ tên:</strong>Văn Đặng Phúc Vinh</div>
+                <div><strong>MSSV:</strong> DH52201768 </div>
+            </div>
+            <div class="row">
+                <div><strong>Lớp:</strong> D22_TH05 </div>
+                <div><strong>Nhóm/Ca học:</strong> Nhóm 12 / Thứ 3, Ca 4</div>
+            </div>
+        </div>
+        <div class="footer-right">
+                <a href="gioithieu.html">
+                    <button class="footer-button">Giới thiệu</button>
+                </a>
+                <a href="lienhe.html">
+                    <button class="footer-button">Liên hệ</button>
+                </a>
+            
+        </div>
+    </div>
+
+</body>
+</html>

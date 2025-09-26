@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu - Burger Restaurant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jaro:wght@400&family=Alumni+Sans:wght@900&family=Kanit:wght@900&display=swap">
+    <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+<header class="header">
+    <div class="logo">
+        <a href="index.html">
+            <img src="https://i.postimg.cc/9QK2QpC6/logo.png" alt="Restaurant Logo" class="logo-img">
+        </a>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="promotion.html">PROMOTION</a></li>
+                <li><a href="#store">STORE</a></li>
+            </ul>
+            <div class="cart">
+                <a href="cart.html">🛒 CART: <span id="cart-count" style="color: yellow">0</span></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        <!-- Main Menu -->
+        <div class="menu-wrapper">
+                    <nav class="menu">
+                            <ul>
+                                
+                                <li>
+                                    <a href="burger.html">
+                                        <img src="https://i.postimg.cc/QtnCppbr/Burger.jpg" alt="Burger Menu" class="menu-img">
+                                        <div>Burger</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="combo.html">
+                                        <img src="https://i.postimg.cc/PJpxKP3v/Combo.jpg" alt="Combo" class="menu-img">
+                                        <div>Combo</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chicken.html">
+                                        <img src="https://i.postimg.cc/906fkCK8/Chicken.jpg" alt="Chicken" class="menu-img">
+                                        <div>Chicken</div>
+                                    </a>
+                                </li>
+                               <li>
+                                    <a href="rice.html">
+                                        <img src="https://i.postimg.cc/mZJhkykY/Rice.png" alt="Rice" class="menu-img">
+                                        <div>Rice</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sideitems.html">
+                                        <img src="https://i.postimg.cc/3xHRCrgW/SideItem.png" alt="Side Items" class="menu-img">
+                                        <div>Side Items</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="drink.html">
+                                        <img src="https://i.postimg.cc/DwdzCVg6/Drink.jpg" alt="Drink" class="menu-img">
+                                        <div>Drink</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="labthuchanh.html">
+                                        <img src="https://i.postimg.cc/QMfd3pvW/labthuchanh.png" alt="LabThucHanh" class="menu-img">
+                                        <div>PracticeLab</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+         </div>
+
+
+
+      <!-- BẢN ĐỒ GOOGLE MAP -->
+ <div class="map-container" style="width: 100%; height: 400px; margin-bottom: 20px; margin-top: 150px" >
+            <iframe id="mapIframe" width="100%" height="400" style="border:0; border-radius: 12px;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.594163253681!2d105.8000000!3d21.0100000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTmjDoCB0aOG7iyBNYXAgZ2nhuqFu!5e0!3m2!1svi!2s!4v0000000000000"></iframe>
+        </div>
+
+<!-- BẢNG CHI NHÁNH -->
+<table class="branch-table">
+  <tr>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6821706201013!2d105.79393309999999!3d21.006076000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca5f64f829f%3A0xcb4a80cd1b0490dc!2zMTIzIMSQLiBUcuG6p24gRHV5IEjGsG5nLCBUcnVuZyBIb8OgLCBUaGFuaCBYdcOibiwgSMOgIE7hu5lp!5e1!3m2!1svi!2s!4v1747255702572!5m2!1svi!2s')">
+        <strong>Burger Royal – Trần Duy Hưng</strong><br>
+        123 Trần Duy Hưng, P. Trung Hòa, Q. Cầu Giấy, Hà Nội<br>
+        SĐT: 028 3456 7801
+      </a>
+    </td>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2015.8248933572722!2d105.81408071499682!3d20.99971864054521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9a9a6a72e1%3A0x214912f7344fd18a!2zOTggxJAuIE5ndXnhu4VuIFRyw6NpLCBUaMaw4bujbmcgxJDDrG5oLCBUaGFuaCBYdcOibiwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1747255988535!5m2!1svi!2s')" >
+        <strong>Burger Royal – Nguyễn Trãi</strong><br>
+        98 Nguyễn Trãi, P. Thượng Đình, Q. Thanh Xuân, Hà Nội<br>
+        SĐT: 028 3456 7802
+      </a>
+    </td>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.6322940942005!2d106.6996937743005!3d10.772828131894123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f46b4407d1d%3A0xc32e930913f715a4!2zNDUgxJAuIE5ndXnDqsyDbiBIdcOqzKMsIELhur9uIE5naMOpLCBRdeG6rW4gMSwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1747256070599!5m2!1svi!2s')">
+        <strong>Burger Royal – Nguyễn Huệ</strong><br>
+        45 Nguyễn Huệ, P. Bến Nghé, Q.1, TP. HCM<br>
+        SĐT: 028 3456 7803
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1801.7314345252544!2d106.66731549835319!3d10.794119896245608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292c5b544573%3A0x94e66b698ac2eef9!2zMjEwIMSQLiBMw6ogVsSDbiBT4bu5LCBQaMaw4budbmcgMTAsIFBow7ogTmh14bqtbiwgSOG7kyBDaMOtIE1pbmggNzAwOTAwLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1747256110727!5m2!1svi!2s')">
+        <strong>Burger Royal – Lê Văn Sỹ</strong><br>
+        210 Lê Văn Sỹ, P.10, Q. Phú Nhuận, TP. HCM<br>
+        SĐT: 028 3456 7804
+      </a>
+    </td>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.7162193601523!2d108.2224449827045!3d16.079727607759967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183b7101a6d7%3A0xbacba7b1406667bf!2zMTIgQuG6oWNoIMSQ4bqxbmcsIFRo4bqhY2ggVGhhbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1747256169864!5m2!1svi!2s')">
+        <strong>Burger Royal – Bạch Đằng</strong><br>
+        12 Bạch Đằng, P. Hải Châu 1, Q. Hải Châu, Đà Nẵng<br>
+        SĐT: 028 3456 7805
+      </a>
+    </td>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.445680076764!2d108.21850637151111!3d16.060603550090402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219cb90130003%3A0xd3cbf1619f769e15!2zODcgxJAuIE5ndXnhu4VuIFbEg24gTGluaCwgTmFtIETGsMahbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1747256250819!5m2!1svi!2s')">
+        <strong>Burger Royal – Nguyễn Văn Linh</strong><br>
+        87 Nguyễn Văn Linh, P. Nam Dương, Q. Hải Châu, Đà Nẵng<br>
+        SĐT: 028 3456 7806
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.0926489667288!2d109.21095768653434!3d12.212624859464482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317067380749f75f%3A0xe970990837e3b064!2zMTkgVHLhuqduIFBow7osIFbEqW5oIEhvw6AsIE5oYSBUcmFuZywgS2jDoW5oIEjDsmEsIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1747256352305!5m2!1svi!2s')">
+
+        <strong >Burger Royal – Trần Phú</strong><br>
+        19 Trần Phú, P. Vĩnh Hòa, TP. Nha Trang<br>
+        SĐT: 028 3456 7807
+      </a>
+    </td>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.6945870931077!2d105.77526517422521!3d10.029984346960337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a08820f621f49f%3A0x2ab6fd46b7d4ec07!2zNjYgxJAuIDMwIFRow6FuZyA0LCBBbiBM4bqhYywgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1747256454787!5m2!1svi!2s')">
+        <strong>Burger Royal – 30/4 Cần Thơ</strong><br>
+        66 Đường 30/4, P. An Lạc, Q. Ninh Kiều, TP. Cần Thơ<br>
+        SĐT: 028 3456 7808
+      </a>
+    </td>
+    <td onclick="changeMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1306.1293324328262!2d108.44481113569645!3d11.93678550805855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171133ca0cb3145%3A0xd327fd491ec992a9!2zMTAyIEjhu5MgVMO5bmcgTeG6rXUsIFBoxrDhu51uZyAxMCwgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1747256505176!5m2!1svi!2s')">
+        <strong>Burger Royal – Hồ Tùng Mậu</strong><br>
+        102 Hồ Tùng Mậu, P.10, TP. Đà Lạt, Lâm Đồng<br>
+        SĐT: 028 3456 7809
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-left">
+            <div class="row">
+                <div><strong>Họ tên:</strong>Văn Đặng Phúc Vinh</div>
+                <div><strong>MSSV:</strong> DH52201768 </div>
+            </div>
+            <div class="row">
+                <div><strong>Lớp:</strong> D22_TH05 </div>
+                <div><strong>Nhóm/Ca học:</strong> Nhóm 12 / Thứ 3, Ca 4</div>
+            </div>
+        </div>
+        <div class="footer-right">
+                <a href="gioithieu.html">
+                    <button class="footer-button">Giới thiệu</button>
+                </a>
+                <a href="lienhe.html">
+                    <button class="footer-button">Liên hệ</button>
+                </a>
+            
+        </div>
+    </div>
+
+        <script src="js/cart.js"></script>
+        <script>
+            function changeMap(url) {
+            var iframe = document.getElementById("mapIframe");
+            iframe.src = url;
+            }
+            </script>
+
+</body>
+</html>

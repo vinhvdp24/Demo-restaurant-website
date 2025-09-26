@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    background-color: #FAF0E6;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Thêm dòng này */
+}
+
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+    height: 60px;
+    background-color: #e55a00;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 70px;
+    height: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 10px 0;
+}
+
+.nav a {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Styles */
+.menu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    position: fixed;
+    top: 60px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+}
+
+.menu-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0;
+    transition: transform 0.3s ease;
+}
+
+.menu a {
+    color: #000;
+    font-family: 'Jaro', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu li:hover .menu-img {
+    transform: scale(1.1);
+}
+
+.menu li:hover a {
+    color: #ff6200;
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #5C4033; /* màu nâu */
+    color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px 10px 0 0;
+    margin-top: auto;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.footer-left .row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row; /* đổi từ column -> row */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.footer-button {
+    padding: 10px 20px;
+    background-color: #ff6200;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #e55a00;
+}
+
+.contact-container {
+    margin: 200px auto;
+    width: 80%;
+}
+
+
+
+.contact-header {
+    margin-left: 10px;
+    font-size: 25px;
+    color: red;
+    
+}
+
+.underline {
+    height: 1px;
+    background-color: black;
+    margin: 10px auto;
+    width: 97%;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+}
+
+
+
+.contact-info h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+.form-container h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e55a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ff8000;
+}
+
+.success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo-img {
+        margin-top: 0;
+        max-width: 40px;
+    }
+
+
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .menu ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .menu li {
+        flex: 0 0 auto;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+    .arrows{
+        margin-top: 50px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+        .logo {
+        margin-left: -15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: 10px;
+        order: -1; /* Hamburger ở bên trái */
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .cart {
+        margin-right: 10px;
+        position: absolute;
+        right: 10px; /* Đảm bảo cart vẫn ở bên phải */
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: white;
+        z-index: 999;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+   
+
+    .menu {
+        top: 60px;
+        height: 100px;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .menu ul {
+        
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        width: max-content;
+    }
+
+    .menu li {
+        flex: 0 0 auto;
+    }
+
+
+
+           .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
+
+    .contact-container{
+        margin-top: 125px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .logo-img {
+        margin-top: 0;
+        max-width: 40px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .menu-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+
+
+    .menu-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+}

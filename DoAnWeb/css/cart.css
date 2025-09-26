@@ -1,0 +1,581 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    background-color: #FAF0E6;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+    height: 60px;
+    background-color: #e55a00;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 70px;
+    height: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 10px 0;
+}
+
+.nav a {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Styles */
+.menu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    position: fixed;
+    top: 60px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+}
+
+.menu-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0;
+    transition: transform 0.3s ease;
+}
+
+.menu a {
+    color: #000;
+    font-family: 'Jaro', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu li:hover .menu-img {
+    transform: scale(1.1);
+}
+
+.menu li:hover a {
+    color: #ff6200;
+}
+/* Container for the cart */
+.cart-container {
+    margin-top: 150px; /* hoặc 140px tùy chiều cao menu và header */
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cart-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+.cart-table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.cart-table td {
+    font-size: 16px;
+}
+.cart-table .cart-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Remove button */
+.remove-item {
+    padding: 8px 12px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #e03e3e;
+}
+
+/* Total section */
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cart-total p {
+    margin-right: 10px;
+}
+
+#total-amount {
+    color: #e55a00; /* Highlight total price with orange */
+}
+
+
+/* Định dạng phần tử chứa số lượng và các nút */
+/* Định dạng phần tử chứa số lượng và các nút */
+.quantity-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;  /* Khoảng cách giữa nút và số lượng */
+}
+
+/* Định dạng nút tăng và giảm số lượng */
+.decrease-quantity, .increase-quantity {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 28px; /* Đảm bảo các nút có chiều cao chính xác */
+    cursor: pointer;
+    background-color: #040202;
+    color: white;
+    border: 1px solid #060202;
+    border-radius: 50%;
+    display: inline-block; /* Đảm bảo nút không bị ẩn */
+}
+
+/* Hiệu ứng hover cho nút */
+.decrease-quantity:hover, .increase-quantity:hover {
+    background-color: #ff6200; /* Đổi màu khi hover */
+}
+
+/* Định dạng số lượng */
+.quantity {
+    font-size: 16px;
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px; /* Khoảng cách giữa nút và số lượng */
+}
+
+
+
+
+
+.order-container {
+  margin: 120px auto;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.order-container h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #e55a00;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.order-container label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.order-container input,
+.order-container select {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-container input:focus,
+.order-container select:focus {
+  outline: none;
+  border-color: #e55a00;
+  box-shadow: 0 0 0 3px rgba(229, 90, 0, 0.2);
+}
+
+.submit-btn {
+  padding: 16px;
+  font-size: 18px;
+  background-color: #e55a00;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #ff6200;
+}
+
+.error {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #5C4033; /* màu nâu */
+    color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.footer-left .row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row; /* đổi từ column -> row */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.footer-button {
+    padding: 10px 20px;
+    background-color: #ff6200;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #e55a00;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo-img {
+        margin-top: 0;
+        max-width: 40px;
+    }
+
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .menu ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .menu li {
+        flex: 0 0 auto;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-left: -15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: 10px;
+        order: -1; /* Hamburger ở bên trái */
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .cart {
+        margin-right: 10px;
+        position: absolute;
+        right: 10px; /* Đảm bảo cart vẫn ở bên phải */
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: white;
+        z-index: 999;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+   
+
+    .menu {
+        top: 60px;
+        height: 100px;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .menu ul {
+        
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        width: max-content;
+    }
+
+    .menu li {
+        flex: 0 0 auto;
+    }
+     .cart-table td {
+        font-size: 14px;
+    }
+
+    .remove-item {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .cart-total p {
+        font-size: 16px;
+    }
+               .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
+
+   
+}
+
+@media screen and (max-width: 480px) {
+    .logo-img {
+        margin-top: 0;
+        max-width: 40px;
+    }
+
+
+
+    .menu-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+
+    .menu-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+       .cart-container {
+        overflow-x: auto;
+    }
+
+    .cart-table {
+        min-width: 600px;
+    }
+    
+
+}

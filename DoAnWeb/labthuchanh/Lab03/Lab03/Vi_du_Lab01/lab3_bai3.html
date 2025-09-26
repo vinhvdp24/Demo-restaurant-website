@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BookStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kanit&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="path/to/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- Hình Banner hoặc Logo  -->
+        <div id="header">
+            <div id="banner_logo">
+                <a href="#"> <img src="images/bookstoreBanner.jpg"  alt="" style="border-radius: 10px;" width="1000px" height="300px" ></a>
+            </div>
+        </div>
+
+        <!-- MENU CHÍNH  -->
+        <div id="menu">
+            <div id="menu_left_corner"></div>
+
+            <div id="menu_content">
+                <ul id="hmenu">
+                    <li>
+                        <a href="#"><img src="images/layout/home.png" /> TRANG CHỦ</a>
+                    </li>
+                    <li class="devider">&nbsp;</li>
+                    <li>
+                        <a href="https://www.youtube.com/embed/UTBDPnrVWRg?si=2FAUSYmuqM-tOBbH" target="namedn"><img src="images/layout/services.png" /> DỊCH VỤ</a>
+                    </li>
+                    <li class="devider">&nbsp;</li>
+                    <li>
+                        <a href="#"><img src="images/layout/favs.png" /> TIN KHUYẾN MÃI</a>
+                    </li>
+                    <li class="devider">&nbsp;</li>
+                    <li>
+                        <a href="#"><img src="images/layout/car.png" /> GIAO HÀNG</a>
+                    </li>
+                    <li class="devider">&nbsp;</li>
+                    <li>
+                        <a href="/Vi_du/index.html" target="namedn"><img src="images/layout/user_add.png" /> ĐĂNG NHẬP</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="menu_right_corner"></div>
+            <div style="clear:both"></div>
+        </div>
+
+        <div id="path"></div>
+        <div id="main">
+
+            <!-- MENU bên trái -->
+            <div id="left">
+                <div class="title">Loại sản phẩm</div>
+                <ul class="categories">
+
+                    <li class="lmenu1">
+                        <a href=""> <img src="images/layout/checked.png" /> &nbsp;&nbsp;Văn Học</a>
+                    </li>
+                    <li class="lmenu2">
+                        <a href=""> <img src="images/layout/checked.png" /> &nbsp;&nbsp;Kinh Tế</a>
+                    </li>
+                    <li class="lmenu1">
+                        <a href=""> <img src="images/layout/checked.png" /> &nbsp;&nbsp;Tâm Lý</a>
+                    </li>
+                    <li class="lmenu2">
+                        <a href=""> <img src="images/layout/checked.png" /> &nbsp;&nbsp;Thiếu Nhi</a>
+                    </li>
+                    <li class="lmenu1">
+                        <a href=""> <img src="images/layout/checked.png" /> &nbsp;&nbsp;Giáo Khoa</a>
+                    </li>
+                    <li class="lmenu2">
+                        <a href=""> <img src="images/layout/checked.png" /> &nbsp;&nbsp;Ngoại Ngữ</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <!-- CONTENT hiển thị ở giữa  -->
+            <div id="content">
+                <form>
+                    <div class="form-group">
+                        <label>Mã sản phẩm</label>
+                        <input type="text" value="49181802">
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Tên sản phẩm</label>
+                        <input type="text" value="Oxford Advanced Learn">
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Hình ảnh</label>
+                        <div class="image-upload">
+                            <div class="file-input-container">
+                                <label class="file-input-button" for="imageInput">Chọn tệp</label>
+                                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                                <div class="file-display">
+                                    <span class="file-name"></span>
+                                    <span class="file-extension">_1.jpg</span>
+                                </div>
+                            </div>
+                            <div class="image-preview">
+                                <img id="preview" src="#" alt="Preview">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Hãng sản xuất</label>
+                        <select>
+                            <option>Thiên Long</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Kích thước</label>
+                        <div class="dimensions">
+                            <span>W:</span>
+                            <input type="number" value="200">
+                            <span>H:</span>
+                            <input type="number" value="300">
+                            <span>mm</span>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Số trang</label>
+                        <input type="number" value="1200">
+                        <span style="margin-left: 10px;">trang</span>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Tác giả</label>
+                        <input type="text" value="English Corpus">
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Giá</label>
+                        <input type="text" value="517.000">
+                        <div class="color-picker">
+                            <span>Màu:</span>
+                            <input type="color">
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Xuất xứ</label>
+                        <input type="text" value="Không có">
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Thể Loại</label>
+                        <div class="checkbox-container">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="vanhoc">
+                                    <label for="vanhoc">Văn học</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="thieunhi">
+                                    <label for="thieunhi">Thiếu nhi</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="kinhte">
+                                    <label for="kinhte">Kinh tế</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="giaokho">
+                                    <label for="giaokho">Giáo khoa</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="tamly">
+                                    <label for="tamly">Tâm lý</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="ngoaingu" checked>
+                                    <label for="ngoaingu">Ngoại ngữ</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label>Mô tả chi tiết</label>
+                        <textarea>Paperback - 10th Edition (With 1 Year's Access To Both Premium Online And App)</textarea>
+                    </div>
+                </form>
+
+                
+            </div>
+
+
+
+            <!-- MENU bên phải  -->
+            <div id="right">
+                <!-- Cần bổ sung thêm (tương tự như <div id="left"> ) -->
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
